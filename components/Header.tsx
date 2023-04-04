@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-import { HiOutlineSearch } from 'react-icons/hi'
+import React, { useState } from 'react';
+import { HiOutlineSearch, HiOutlineShoppingBag } from 'react-icons/hi'
 
 const Header = () => {
+  const [isBagItem, setIsBagItem] = useState(false);
+
   return (
-    <header className="sticky top-0 z-30 w-full flex items-center justify-center p-4 bg-slate-400">
+    <header className="sticky top-0 z-30 w-full flex items-center justify-center p-4 bg-slate-100">
         <div className="flex items-center justify-center w-full lg:w-[1024px] mr-4">
             {/* Logo */}
             <div className="flex items-center justify-center mr-3">
@@ -17,14 +19,16 @@ const Header = () => {
             </div>
             {/* Search */}
             <div className="flex items-center justify-start w-full">
-                <div className="relative w-full flex items-center justify-center h-10">
-                    <HiOutlineSearch className="absolute inset-y-0 h-full "/>
-                    <input className="h-full w-[calc(100%_-_0.5rem)] outline-none" type="text" />
+                <div className="relative w-full flex items-center justify-center h-10 ">
+                    <HiOutlineSearch className="absolute top-0 left-4 h-full "/>
+                    <input className="h-full w-[calc(100%_-_0.5rem)] outline-none px-8 rounded-full" type="text" placeholder="Bạn cần tìm gì?"/>
                 </div>
             </div>
-            {/* Right */}
+            {/* Right - shopping card*/}
             <div className="flex items-center justify-start ml-3">
-                <HiOutlineSearch className="absolute inset-y-0 h-full "/>
+                <div>
+                    <HiOutlineShoppingBag className="absolute inset-y-0 h-full "/>
+                </div>
             </div>
         </div>
     </header>
