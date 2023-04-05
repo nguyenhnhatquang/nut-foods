@@ -30,7 +30,9 @@ const Header = () => {
                     <HiOutlineShoppingBag className="absolute inset-y-0 h-full text-2xl"/>
                     {
                         isBagItem && 
-                        <div className="absolute bg-teal-300 h-2 w-2 rounded-full top-6 right-2"></div>
+                        <div className="absolute bg-green-600 h-4 w-4 rounded-full top-7 left-7 text-white text-xs flex text-center justify-center">
+                            10
+                        </div>
                     }
                 </div>
             </div>
