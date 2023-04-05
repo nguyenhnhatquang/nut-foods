@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { HiOutlineSearch, HiOutlineShoppingBag } from 'react-icons/hi'
 
 const Header = () => {
-  const [isBagItem, setIsBagItem] = useState(false);
+  const [isBagItem, setIsBagItem] = useState(true);
 
   return (
     <header className="sticky top-0 z-30 w-full flex items-center justify-center p-4 bg-slate-200">
@@ -28,6 +28,10 @@ const Header = () => {
             <div className="flex items-center justify-start ml-3">
                 <div className="relative bg-slate-100 h-10 w-10 flex items-center justify-center rounded-xl cursor-pointer">
                     <HiOutlineShoppingBag className="absolute inset-y-0 h-full text-2xl"/>
+                    {
+                        isBagItem && 
+                        <div className="absolute bg-teal-300 h-2 w-2 rounded-full top-6 right-2"></div>
+                    }
                 </div>
             </div>
         </div>
