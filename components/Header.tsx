@@ -7,8 +7,8 @@ const Header = () => {
   const [isBagItem, setIsBagItem] = useState(false);
 
   return (
-    <header className="sticky top-0 z-30 w-full flex items-center justify-center p-4 bg-slate-100">
-        <div className="flex items-center justify-center w-full lg:w-[1024px] mr-4">
+    <header className="sticky top-0 z-30 w-full flex items-center justify-center p-4 bg-slate-200">
+        <div className="flex items-center justify-center w-full lg:w-[1024px]">
             {/* Logo */}
             <div className="flex items-center justify-center mr-3">
                 <Link href="/">
@@ -20,14 +20,14 @@ const Header = () => {
             {/* Search */}
             <div className="flex items-center justify-start w-full">
                 <div className="relative w-full flex items-center justify-center h-10 ">
-                    <HiOutlineSearch className="absolute top-0 left-4 h-full "/>
-                    <input className="h-full w-[calc(100%_-_0.5rem)] outline-none px-8 rounded-full" type="text" placeholder="Bạn cần tìm gì?"/>
+                    <input className="h-full w-[calc(100%_-_0.5rem)] outline-none pl-6 pr-10 rounded-full" type="search" placeholder="Bạn cần tìm gì?"/>
+                    <HiOutlineSearch className="absolute top-0 right-5 h-full cursor-pointer"/>
                 </div>
             </div>
             {/* Right - shopping card*/}
             <div className="flex items-center justify-start ml-3">
-                <div>
-                    <HiOutlineShoppingBag className="absolute inset-y-0 h-full "/>
+                <div className="relative bg-slate-100 h-10 w-10 flex items-center justify-center rounded-xl cursor-pointer">
+                    <HiOutlineShoppingBag className="absolute inset-y-0 h-full text-2xl"/>
                 </div>
             </div>
         </div>
