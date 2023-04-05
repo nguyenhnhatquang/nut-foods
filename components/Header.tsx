@@ -26,7 +26,7 @@ const Header = () => {
             </div>
             {/* Right - shopping card*/}
             <div className="flex items-center justify-start ml-3">
-                <div className="relative bg-slate-100 h-10 w-10 flex items-center justify-center rounded-xl cursor-pointer">
+                <div className="relative bg-slate-50 h-10 w-10 flex items-center justify-center rounded-xl cursor-pointer hover:bg-white">
                     <HiOutlineShoppingBag className="absolute inset-y-0 h-full text-2xl"/>
                     {
                         isBagItem && 
