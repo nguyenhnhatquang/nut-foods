@@ -26,13 +26,20 @@ const Header = () => {
             </div>
             {/* Right - shopping card*/}
             <div className="element-end ml-3">
-                <div className="element-center relative bg-slate-50 h-10 w-10 rounded-xl cursor-pointer hover:bg-emerald-50 mr-[10px] min-[580px]:w-[100px]">
-                    <HiOutlineTruck className="h-full text-[18px]"/>
-                    <span className="hidden text-[14px] subpixel-antialiased pl-1 min-[580px]:block">Đơn Hàng</span>
+                <div className="element-center header__button mr-[10px] min-[580px]:header__button--grid min-[580px]:w-[100px]">
+                    <div className="flex items-center justify-end">
+                        <HiOutlineTruck className="h-full text-[18px]"/>
+                    </div>
+                    <div className="flex items-center justify-start">
+                        <span className="hidden text-[13px] subpixel-antialiased pl-1 min-[580px]:block">Đơn Hàng</span>
+                    </div>
                 </div>
 
-                <div className="element-center relative bg-slate-50 h-10 w-10 rounded-xl cursor-pointer hover:bg-emerald-50 min-[580px]:w-[100px] sm:mr-[10px]">
-                    <HiOutlineShoppingCart className="h-full text-[18px]"/>
+                <div className="header__button relative w-10 min-[580px]:w-[100px] sm:mr-[10px]">
+                    <div className="flex items-center justify-end">
+                        <HiOutlineShoppingCart className="h-full text-[18px]"/>
+                    </div>
+                    
                     {
                         isBagItem && (
                             <>
@@ -42,12 +49,19 @@ const Header = () => {
                             </>
                         )
                     }
-                    <span className="hidden text-[14px] subpixel-antialiased pl-1 min-[580px]:block">Giỏ Hàng</span>
+
+                    <div className="flex items-center justify-start">
+                        <span className="hidden text-[13px] subpixel-antialiased pl-1 min-[580px]:block">Giỏ Hàng</span>
+                    </div>
                 </div>
 
-                <div className="hidden h-10 w-[100px] bg-slate-50 rounded-xl cursor-pointer sm:element-center hover:bg-emerald-50">
-                    <HiOutlineUser className="h-full text-[18px]"/>
-                    <span className="hidden text-[14px] subpixel-antialiased pl-1 min-[580px]:block">Đăng Nhập</span>
+                <div className="hidden sm:header__button w-[100px]">
+                    <div className="flex items-center justify-end">
+                        <HiOutlineUser className="h-full text-[18px]"/>
+                    </div>
+                    <div className="flex items-center justify-start">
+                        <span className="hidden text-[13px] max-w-[70px] subpixel-antialiased pl-1 whitespace-nowrap overflow-hidden min-[580px]:block">Đăng Nhập</span>
+                    </div>
                 </div>
             </div>
         </div>

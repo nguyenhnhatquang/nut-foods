@@ -14,6 +14,7 @@ input[type="search"]::-webkit-search-results-decoration {
     @apply bg-[#f5fdf7];
   }
 }
+
 @layer utilities {
   .element-center {
     @apply flex items-center justify-center;
@@ -25,5 +26,13 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .element-end {
     @apply flex items-center justify-end;
+  }
+
+  .header__button {
+    @apply bg-slate-50 h-10 w-10 rounded-xl cursor-pointer hover:bg-emerald-50;
+  }
+
+  .header__button--grid {
+    @apply grid grid-cols-[26px_auto];
   }
 }
