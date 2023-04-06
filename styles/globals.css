@@ -8,3 +8,22 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance:none;
 }
+
+@layer base {
+  body {
+    @apply bg-[#f5fdf7];
+  }
+}
+@layer utilities {
+  .element-center {
+    @apply flex items-center justify-center;
+  }
+
+  .element-start {
+    @apply flex items-center justify-start;
+  }
+
+  .element-end {
+    @apply flex items-center justify-end;
+  }
+}
