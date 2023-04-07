@@ -16,23 +16,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @layer utilities {
-  .element-center {
-    @apply flex items-center justify-center;
-  }
-
-  .element-start {
-    @apply flex items-center justify-start;
-  }
-
-  .element-end {
-    @apply flex items-center justify-end;
-  }
-
   .header__button {
-    @apply bg-slate-50 h-10 w-10 rounded-xl cursor-pointer hover:bg-emerald-50;
+    @apply grid grid-cols-1 bg-slate-50 h-10 w-10 rounded-xl cursor-pointer hover:bg-emerald-50 select-none; 
   }
 
   .header__button--grid {
-    @apply grid grid-cols-[26px_auto];
+    @apply grid-cols-[26px_auto] w-[100px];
   }
 }
