@@ -7,7 +7,7 @@ const Header = () => {
   const [isBagItem, setIsBagItem] = useState(true);
 
   return (
-    <header className="flex items-center justify-center sticky top-0 z-30 w-full p-4 bg-emerald-100">
+    <header className="flex items-center justify-center sticky top-0 z-30 w-full p-4 bg-[#99CC99]">
         <div className="flex items-center justify-center w-full lg:w-[1024px]">
             {/* Logo */}
             <div className="flex items-center justify-center mr-3">
